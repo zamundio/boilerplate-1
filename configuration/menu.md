@@ -5,10 +5,10 @@ parent: Configuration
 permalink: /configuration/menu
 ---
 
-# config/menu.php
+# config/boilerplate/menu.php
 {: .no_toc }
 
-The `config/menu.php` file allows to add menu items and set the dashboard controller to use.
+The `config/boilerplate/menu.php` file allows to add menu items and set the dashboard controller to use.
 
 
 ---

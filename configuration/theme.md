@@ -5,10 +5,10 @@ parent: Configuration
 permalink: /configuration/theme
 ---
 
-# config/theme.php
+# config/boilerplate/theme.php
 {: .no_toc }
 
-The `config/theme.php` 
+The `config/boilerplate/theme.php` file allows to define the backend theme parameters.
 
 ---
 
@@ -19,11 +19,17 @@ The `config/theme.php`
 
 ---
 
-## dashboard
+## theme
 
+Theme to use.
 
+See [How to change theme](/howto/change-theme)
 
 ---
 
-## providers
+## navbar
+
+Allows you to define additionnal views that will be displayed to the top bar.
+
+See [How-to add items to the top bar](/howto/add-navbar-items)
 

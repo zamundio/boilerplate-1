@@ -7,7 +7,7 @@ has_toc: false
 
 # Configuration
 
-After installing the package correctly, the configuration files can be found in the `config/boilerplate` folder at the 
+[After installing the package correctly](/installation), the configuration files can be found in the `config/boilerplate` folder at the 
 root of the Laravel project.
 
 | File name | Description |

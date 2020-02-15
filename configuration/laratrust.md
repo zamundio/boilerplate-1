@@ -5,10 +5,10 @@ parent: Configuration
 permalink: /configuration/laratrust
 ---
 
-# config/laratrust.php
+# config/boilerplate/laratrust.php
 {: .no_toc }
 
-The `config/laratrust.php` file allows to define the classes used by [Laratrust](https://laratrust.santigarcor.me/).
+The `config/boilerplate/laratrust.php` file allows to define the classes used by [Laratrust](https://laratrust.santigarcor.me/).
 
 Laratrust is a Laravel package that lets you handle very easily everything related with authorization (roles and 
 permissions) inside your application. All of this through a very simple configuration process and API.

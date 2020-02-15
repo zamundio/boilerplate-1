@@ -5,10 +5,10 @@ parent: Configuration
 permalink: /configuration/app
 ---
 
-# config/app.php
+# config/boilerplate/app.php
 {: .no_toc }
 
-The `config/app.php` file allows to define the general parameters of the application.
+The `config/boilerplate/app.php` file allows to define the general parameters of the application.
 
 ---
 

@@ -5,10 +5,10 @@ parent: Configuration
 permalink: /configuration/auth
 ---
 
-# config/auth.php
+# config/boilerplate/auth.php
 {: .no_toc }
 
-The `config/auth.php` file allows to define the authentication and registration parameters of the application.
+The `config/boilerplate/auth.php` file allows to define the authentication and registration parameters of the application.
 
 
 ---
