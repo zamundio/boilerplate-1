@@ -1,0 +1,8 @@
+title: "Laravel Boilerplate"
+remote_theme: pmarsceill/just-the-docs
+search_enabled: true
+aux_links:
+  "Boilerplate on GitHub":
+    - "//github.com/sebastienheyd/boilerplate"
+plugins:
+  - jekyll-remote-theme
