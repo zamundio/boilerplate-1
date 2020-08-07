@@ -18,7 +18,7 @@ Run the command below to publish assets, views, lang files, ...
 php artisan vendor:publish --provider="Sebastienheyd\Boilerplate\BoilerplateServiceProvider"
 ```
 
-After you set your database parameters in your ```.env``` file run :
+After you set your database run :
 
 ```
 php artisan migrate

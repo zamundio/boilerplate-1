@@ -17,7 +17,7 @@ To auto update assets each time package is updated, you can add this command to 
 file `composer.json` at the root of your project.
 
 
-```json
+```
 {
     "scripts": {
         "post-autoload-dump": [

@@ -6,3 +6,4 @@ aux_links:
     - "//github.com/sebastienheyd/boilerplate"
 plugins:
   - jekyll-remote-theme
+color_scheme: blue
