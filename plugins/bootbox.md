@@ -10,6 +10,7 @@ Bootbox.js is a small JavaScript library which allows you to create programmatic
 
 See [Bootbox documentation](http://bootboxjs.com/documentation.html) 
 
-Bootbox is loaded by default, you don't have to call any loader.
+> Bootbox is loaded by default, you don't have to call any loader.
 
-[Example file](https://github.com/sebastienheyd/boilerplate/blob/master/src/resources/views/plugins/demo/bootbox.blade.php)
+## Examples
+

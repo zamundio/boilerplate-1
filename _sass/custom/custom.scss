@@ -16,6 +16,28 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
 }
 
+.main-content blockquote {
+  margin: 0;
+  padding: 1.25rem;
+  border-left: 5px solid #CCC;
+  background-color: #f3f5f7;
+  border-left: 8px solid #42b983;
+
+  &.warning {
+    border-color: #e7c000;
+    background: #fff7d0;
+    color: #6b5900;
+  }
+
+  & p:first-child {
+    margin-top: 0
+  }
+
+  & p:last-child {
+    margin-bottom: 0
+  }
+}
+
 @media (min-width: 66.5rem) {
   .main {
     margin-left: 264px
@@ -47,6 +69,11 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: center;
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+
+  .main-content-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 

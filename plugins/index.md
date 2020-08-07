@@ -14,7 +14,7 @@ prepared to add the loading of scripts and styles for a plugin.
 
 For example, you want to use a datepicker on a text field :
 
-```blade
+```html
 @include('boilerplate::load.datepicker')
 
 @push('js')
