@@ -24,7 +24,7 @@ Originally created for reports at Improvely, the Date Range Picker can be attach
 
 You can find an example here : [datepicker.blade.php](https://github.com/sebastienheyd/boilerplate/blob/e1dc4b29920f011271a1a7ad682c3e82643180d9/src/resources/views/plugins/demo/datepicker.blade.php#L1)
 
-```blade
+```html
 @section('content')
 <input type="text" class="datepicker">
 <input type="text" class="datetimepicker">

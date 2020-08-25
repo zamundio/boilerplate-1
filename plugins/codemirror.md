@@ -14,7 +14,7 @@ CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 
 To use CodeMirror on your page you can use the loading view `boilerplate::load.codemirror`
 
-```blade
+```html
 @include('boilerplate::load.codemirror')
 ```
 
@@ -26,7 +26,7 @@ Default theme is `storm`.
 
 ## Usage
 
-```blade
+```html
 @include('boilerplate::load.codemirror')
 @push('js')
     <script>
