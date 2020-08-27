@@ -12,11 +12,18 @@ The `config/boilerplate/theme.php` file allows to define the backend theme param
 
 ---
 
-{: .no_toc .text-delta }
+```php
+<?php
+$theme = include __DIR__.'/themes/default.php';
 
-1. TOC
-{:toc}
+// Additionnal views to append items to the navbar
+$theme['navbar'] += [
+    'left'  => [],
+    'right' => [],
+];
 
+return $theme;
+```
 ---
 
 ## theme

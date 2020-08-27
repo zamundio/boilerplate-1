@@ -14,7 +14,11 @@ All you have to do is to include the theme file you want to use :
 $theme = include __DIR__.'/themes/default.php';
 ```
 
-Available themes with this package are `default`, `black`, `red`.
+> Available themes are `default`, `black`, `red`.
+
+<a href="/assets/img/logs_stats.png" class="img-link"><img src="/assets/img/logs_stats.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
+<a href="/assets/img/theme_black.png" class="img-link"><img src="/assets/img/theme_black.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
+<a href="/assets/img/theme_red.png" class="img-link"><img src="/assets/img/theme_red.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
 
 ---
 

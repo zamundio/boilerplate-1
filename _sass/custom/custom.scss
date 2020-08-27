@@ -118,4 +118,18 @@ code {
   }
 }
 
+.img-link {
+  text-decoration: none;
+
+  img {
+    transition: opacity 150ms ease-in-out;
+  }
+
+  &:hover {
+    img {
+      opacity: .75;
+    }
+  }
+}
+
 @import "code";

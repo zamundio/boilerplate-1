@@ -13,10 +13,13 @@ The `config/boilerplate/menu.php` file allows to add menu items and set the dash
 
 ---
 
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
+```php
+<?php
+return [
+    'dashboard' => \Sebastienheyd\Boilerplate\Controllers\DashboardController::class, // Dashboard controller to use
+    'providers' => [],                                                                // Additional menu items providers
+];
+```
 
 ---
 

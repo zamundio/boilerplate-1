@@ -13,10 +13,20 @@ The `config/boilerplate/auth.php` file allows to define the authentication and r
 
 ---
 
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
+```php
+<?php
+return [
+    'register'      => false,           // Allow to register new users on backend login page
+    'register_role' => 'backend_user',  // Given role to new users (except the first one who is admin)
+    'providers'     => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model'  => Sebastienheyd\Boilerplate\Models\User::class,
+            'table'  => 'users',
+        ],
+    ],
+];
+```
 
 ---
 
@@ -36,6 +46,8 @@ The `register_role` parameter allows to set the default role when a new user reg
 above is set to "true").
 
 The default value is `backend_user`
+
+> The first user created will always have the role admin 
 
 ---
 

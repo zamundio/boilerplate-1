@@ -12,11 +12,22 @@ The `config/boilerplate/app.php` file allows to define the general parameters of
 
 ---
 
-{: .no_toc .text-delta }
+```php
+<?php
+return [
+    // Backend routes prefix. Ex: "admin" => "http://..../admin"
+    'prefix'     => 'admin',
 
-1. TOC
-{:toc}
+    // Backend domain if different as current domain. Ex: "admin.mydomain.tld"
+    'domain'     => '',
 
+    // Redirect to this route after login
+    'redirectTo' => 'boilerplate.dashboard',
+
+    // Backend locale
+    'locale'     => config('app.locale'),
+];
+```
 ---
 
 ## prefix

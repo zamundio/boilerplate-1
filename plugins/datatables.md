@@ -10,9 +10,13 @@ DataTables is a plugin to convert html tables into dynamic tables, allowing fast
 
 > [https://datatables.net/](https://datatables.net/)
 
+![datatables](/assets/img/datatables.png)
+
+---
+
 ## Loading
 
-To use DataTables on your page you can use the loading view `boilerplate::load.datatables`
+To use DataTables on your page you can use the loading view [`boilerplate::load.datatables`](https://github.com/sebastienheyd/boilerplate/blob/e1dc4b29920f011271a1a7ad682c3e82643180d9/src/resources/views/load/datatables.blade.php)
 
 ```html
 @include('boilerplate::load.datatables')
