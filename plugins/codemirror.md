@@ -10,7 +10,7 @@ CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 
 > [https://codemirror.net](https://codemirror.net)
 
-![CodeMirror](/assets/img/codemirror.png)
+![CodeMirror](assets/img/codemirror.png)
 
 ---
 

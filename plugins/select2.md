@@ -10,7 +10,7 @@ Select2 gives you a customizable select box with support for searching, tagging,
 
 > [https://select2.org](https://select2.org)
 
-![](/assets/img/select2.png)
+![](assets/img/select2.png)
 
 ---
 

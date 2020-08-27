@@ -21,12 +21,12 @@ It includes profile creation and his management, user management, roles, permiss
 It also makes it easy to add other packages to extend the features.
 
 ---
-<a href="/assets/img/register.png" class="img-link"><img src="/assets/img/register.png" style="max-width:100%;height:100px;margin-right:.5rem"/></a>
-<a href="/assets/img/login.png" class="img-link"><img src="/assets/img/login.png" style="max-width:100%;height:100px;margin-right:.5rem"/></a>
-<a href="/assets/img/add_user.png" class="img-link"><img src="/assets/img/add_user.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
-<a href="/assets/img/role.png" class="img-link"><img src="/assets/img/role.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
-<a href="/assets/img/logs.png" class="img-link"><img src="/assets/img/logs.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
-<a href="/assets/img/theme_red.png" class="img-link"><img src="/assets/img/theme_red.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
+<a href="assets/img/register.png" class="img-link"><img src="assets/img/register.png" style="max-width:100%;height:100px;margin-right:.5rem"/></a>
+<a href="assets/img/login.png" class="img-link"><img src="assets/img/login.png" style="max-width:100%;height:100px;margin-right:.5rem"/></a>
+<a href="assets/img/add_user.png" class="img-link"><img src="assets/img/add_user.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
+<a href="assets/img/role.png" class="img-link"><img src="assets/img/role.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
+<a href="assets/img/logs.png" class="img-link"><img src="assets/img/logs.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
+<a href="assets/img/theme_red.png" class="img-link"><img src="assets/img/theme_red.png" style="max-width:100%;height:100px;margin-right:.5rem" /></a>
 
 ## Features
 

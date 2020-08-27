@@ -10,7 +10,7 @@ Bootbox.js is a small JavaScript library which allows you to create programmatic
 
 > [http://bootboxjs.com/](http://bootboxjs.com/documentation.html) 
 
-![BootBox](/assets/img/bootbox.png)
+![BootBox](assets/img/bootbox.png)
 
 ---
 

@@ -36,4 +36,4 @@ Now you can point your browser to [http://localhost:8000/admin](http://localhost
 
 If everything is ok, you will see the first user registration form.
 
-![Register](/assets/img/register.png)
+![](assets/img/register.png)
