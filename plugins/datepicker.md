@@ -14,7 +14,7 @@ Tempus Dominus is the successor to the very popular Eonasdan/bootstrap-datetimep
 
 > [https://tempusdominus.github.io/bootstrap-4](https://tempusdominus.github.io/bootstrap-4/)
 
-![Tempus Dominus](assets/img/tempusdominus.png)
+![Tempus Dominus](../assets/img/tempusdominus.png)
 
 ## Date Range Picker
 

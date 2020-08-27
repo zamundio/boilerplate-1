@@ -10,7 +10,7 @@ TinyMCE is the an advanced WYSIWYG HTML editor designed to simplify website cont
 
 > [https://www.tiny.cloud](https://www.tiny.cloud)
 
-![TinyMCE](assets/img/tinymce.png)
+![TinyMCE](../assets/img/tinymce.png)
 
 ## Usage
 
