@@ -10,6 +10,8 @@ icheck-bootstrap is pure css solution for displaying twitter bootstrap style che
 
 > [https://github.com/bantikyan/icheck-bootstrap](https://github.com/bantikyan/icheck-bootstrap)
 
+![TinyMCE](../assets/img/icheck.png)
+
 ## Usage
 
 icheck-bootstrap is loaded by default, you don't have to call any loader.

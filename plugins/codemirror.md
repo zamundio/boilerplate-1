@@ -12,8 +12,6 @@ CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 
 ![CodeMirror](../assets/img/codemirror.png)
 
----
-
 ## Loading
 
 To use CodeMirror on your page you can use the loading view [`boilerplate::load.codemirror`](https://github.com/sebastienheyd/boilerplate/blob/e1dc4b29920f011271a1a7ad682c3e82643180d9/src/resources/views/load/codemirror.blade.php)

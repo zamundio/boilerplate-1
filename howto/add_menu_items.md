@@ -13,13 +13,6 @@ To add items to the main menu, boilerplate will use providers.
 
 --- 
 
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
 ## Generating a new menu items provider
 
 This package provides an artisan command to quickly generate a menu items provider.

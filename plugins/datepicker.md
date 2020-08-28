@@ -14,13 +14,15 @@ Tempus Dominus is the successor to the very popular Eonasdan/bootstrap-datetimep
 
 > [https://tempusdominus.github.io/bootstrap-4](https://tempusdominus.github.io/bootstrap-4/)
 
-![Tempus Dominus](../assets/img/tempusdominus.png)
+![](../assets/img/tempusdominus.png)
 
 ## Date Range Picker
 
 Originally created for reports at Improvely, the Date Range Picker can be attached to any webpage element to pop up two calendars for selecting dates, times, or predefined ranges like "Last 30 Days".
 
 > [https://www.daterangepicker.com](https://www.daterangepicker.com/)
+
+![](../assets/img/daterange.png)
 
 ## Usage
 
