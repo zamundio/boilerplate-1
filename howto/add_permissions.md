@@ -41,7 +41,62 @@ Permission name can be found when you move the mouse over the permission label. 
 
 ### Check permissions
 
-There is three major way to check permissions :
+There is several ways to check permissions.
+
+With [Laratrust middleware](https://laratrust.santigarcor.me/docs/6.x/usage/middleware.html#configuration) on **routes** :
+
+```php
+Route::group(['prefix' => 'admin', 'middleware' => ['ability:admin,backend_access']], function() {
+    Route::get('/', 'AdminController@welcome');
+    Route::get('/manage', ['middleware' => ['permission:manage-admins'], 'uses' => 'AdminController@manageAdmins']);
+});
+```
+
+With [Laratrust middleware](https://laratrust.santigarcor.me/docs/6.x/usage/middleware.html#configuration) in **controller** constructor :
+
+```php
+public function __construct()
+{
+   $this->middleware('ability:admin,backend_access', [
+       'except' => [
+           'show',
+       ],
+   ]);
+}
+```
+
+[In **Blade** templates](https://laratrust.santigarcor.me/docs/6.x/usage/blade-templates.html)
+
+```blade
+@role('admin')
+    <p>This is visible to users with the admin role. Gets translated to
+    \Laratrust::hasRole('admin')</p>
+@endrole
+
+@permission('manage-admins')
+    <p>This is visible to users with the given permissions. Gets translated to
+    \Laratrust::isAbleTo('manage-admins'). The @can directive is already taken by core
+    laravel authorization package, hence the @permission directive instead.</p>
+@endpermission
+
+@ability('admin,owner', 'create-post,edit-user')
+    <p>This is visible to users with the given abilities. Gets translated to
+    \Laratrust::ability('admin,owner', 'create-post,edit-user')</p>
+@endability
+```
+
+[Or check directly in your **code**](https://laratrust.santigarcor.me/docs/6.x/usage/roles-and-permissions.html#user-ability) :
+
+```php
+Laratrust::hasRole('role-name');
+Laratrust::isAbleTo('permission-name');
+Laratrust::ability('admin|owner', 'create-post|edit-user');
+
+// is identical to
+Auth::user()->hasRole('role-name');
+Auth::user()->hasPermission('permission-name');
+Auth::user()->ability('admin|owner', 'create-post|edit-user');
+```
 
 ### Create permissions
 
