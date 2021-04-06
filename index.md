@@ -17,7 +17,13 @@ permalink: /
 This package serves as a basis for quickly creating a back-office. 
 It includes profile creation and his management, user management, roles, permissions and log viewing.
 
-It also makes it easy to add other packages to extend the features.
+It also makes it easy to add other packages to extend the features, have a look to
+[sebastienheyd/boilerplate-packager](https://github.com/sebastienheyd/boilerplate-packager) to quickly build your own
+package for boilerplate.
+
+Other packages to extend the features :
+* [sebastienheyd/boilerplate-media-manager](https://github.com/sebastienheyd/boilerplate-media-manager)
+* [sebastienheyd/boilerplate-email-editor](https://github.com/sebastienheyd/boilerplate-email-editor)
 
 ---
 <a href="assets/img/register.png" class="img-link"><img src="assets/img/register.png" style="max-width:100%;height:100px;margin-right:.5rem"/></a>
@@ -41,4 +47,4 @@ It also makes it easy to add other packages to extend the features.
 * Logs visualization by [arcanedev/log-viewer](https://github.com/ARCANEDEV/LogViewer)
 * Gravatar import by [thomaswelton/laravel-gravatar](https://github.com/thomaswelton/laravel-gravatar)
 * Javascript session keep-alive
-* Localized English / French / Spanish / Turkish
+* Localized English / French / Italian / Spanish / Turkish

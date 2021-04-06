@@ -112,6 +112,12 @@ code {
   border-radius: 3px;
 }
 
+div.highlighter-rouge {
+  pre.highlight {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
 .highlight pre {
   code {
     color: #FFF;

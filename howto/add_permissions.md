@@ -67,7 +67,7 @@ public function __construct()
 
 [In **Blade** templates](https://laratrust.santigarcor.me/docs/6.x/usage/blade-templates.html)
 
-```blade
+```html
 @role('admin')
     <p>This is visible to users with the admin role. Gets translated to
     \Laratrust::hasRole('admin')</p>

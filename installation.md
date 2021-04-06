@@ -12,10 +12,10 @@ In order to install Laravel/AdminLTE Boilerplate run :
 composer require sebastienheyd/boilerplate
 ```
 
-Run the command below to publish assets, views, lang files, ...
+Run the command below to publish assets, lang and configuration files
 
 ```
-php artisan vendor:publish --provider="Sebastienheyd\Boilerplate\BoilerplateServiceProvider"
+php artisan vendor:publish --tag=boilerplate
 ```
 
 After you set your database run :
