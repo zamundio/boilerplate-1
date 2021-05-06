@@ -28,6 +28,7 @@ Attributes that can be used with this component :
 | --- | --- | --- | --- |
 | color | string | primary | Checkbox color (*) |
 | checked | boolean | false | If true input will be checked |
+| disabled | boolean | false | If true input will be disabled |
 | type | string | checkbox | Type of input : checkbox or radio |
 | id | string | random id | Id of the input, if no value will set a unique random id |
 | label | string | empty string | Label of the input, can be a translation string |

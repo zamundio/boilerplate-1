@@ -1,11 +1,11 @@
 ---
-title: Change the dashboard
+title: Customize the dashboard
 parent: How-to
 permalink: /howto/change-dashboard
 nav_order: 0
 ---
 
-# Change the dashboard
+# Customize the dashboard
 
 You can override the dashboard view by publishing it :
 

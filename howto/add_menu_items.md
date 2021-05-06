@@ -1,10 +1,10 @@
 ---
-title: Add items to the main menu
+title: Add items to the menu
 parent: How-to
 permalink: /howto/add-menu-items
 ---
 
-# Add items to the main menu
+# Add items to the menu
 {: .no_toc }
 
 Menu items are supported by the [lavary/laravel-menu](https://github.com/lavary/laravel-menu) and [hieu-le/active](https://github.com/letrunghieu/active) packages.
