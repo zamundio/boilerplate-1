@@ -1,6 +1,6 @@
 ---
 title: Input
-parent: Components
+parent: Blade components
 permalink: /components/input
 ---
 
@@ -10,7 +10,7 @@ permalink: /components/input
 <x-boilerplate::input name="example" label="Example" />
 ```
 
-Or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::input', ['name' => 'example', 'label' => 'Example']) @endcomponent

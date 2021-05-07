@@ -1,7 +1,8 @@
 ---
 title: Card
-parent: Components
+parent: Blade components
 permalink: /components/card
+nav_order: 0
 ---
 
 # Card
@@ -12,7 +13,7 @@ permalink: /components/card
 </x-boilerplate::card>
 ```
 
-Or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::card')
@@ -61,7 +62,7 @@ You can set a specific header and / or footer with slots :
 </x-boilerplate::card>
 ```
 
-or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::card')
@@ -112,7 +113,7 @@ For tabs cards, you have to set tabs option :
 </x-boilerplate::card>
 ```
 
-or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::card', ['tabs' => true])

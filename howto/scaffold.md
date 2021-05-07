@@ -11,8 +11,6 @@ Sometimes you need to customize templates, controllers or views for your needs.
 
 For example: you need to add fields to your user to be able to identify him, for that you have to modify the user model, but also the views and the controller that manages the data of the user.
 
-
-
 ## Scaffold
 
 This command will publish in your project the necessary files that will override those of the package and will allow you to modify them as you want.
@@ -45,7 +43,7 @@ And finally, if you have existing users in the database, they will be updated to
 
 ## Rollback
 
-You can restore the configuration and delete the installed files with the following command:
+You can restore the configuration and delete the installed files by calling the command with the remove option:
 
 ```bash
 php artisan boilerplate:scaffold -r

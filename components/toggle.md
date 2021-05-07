@@ -1,6 +1,6 @@
 ---
 title: Toggle
-parent: Components
+parent: Blade components
 permalink: /components/toggle
 ---
 
@@ -11,7 +11,7 @@ permalink: /components/toggle
 <x-boilerplate::toggle label="Toggle label" color-on="green" checked/>
 ```
 
-Or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::toggle') @endcomponent

@@ -1,7 +1,8 @@
 ---
 title: Smallbox
-parent: Components
+parent: Blade components
 permalink: /components/smallbox
+nav_order: 20
 ---
 
 # Smallbox
@@ -11,7 +12,7 @@ permalink: /components/smallbox
 <x-boilerplate::smallbox color="green" nb="1234" text="Smallbox text" icon="far fa-envelope" link="#" link-text="More informations"/>
 ```
 
-Or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::smallbox') @endcomponent

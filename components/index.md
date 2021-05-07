@@ -1,10 +1,10 @@
 ---
-title: Components
+title: Blade components
 nav_order: 45
 has_children: true
 has_toc: true
 ---
 
-# Components
+# Blade components
 
-This package contains Laravel Blade Components for AdminLTE 3
+This package contains Blade Components for AdminLTE 3

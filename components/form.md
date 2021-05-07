@@ -1,6 +1,6 @@
 ---
 title: Form
-parent: Components
+parent: Blade components
 permalink: /components/form
 ---
 
@@ -10,7 +10,7 @@ permalink: /components/form
 <x-boilerplate::form> </x-boilerplate::form>
 ```
 
-Or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::form') @endcomponent
@@ -43,7 +43,7 @@ All of the attributes that are not in the list above will be added as attributes
 <x-boilerplate::form :route="['boilerplate.users.edit', 1]" method="put" files> </x-boilerplate::form>
 ```
 
-Or for Laravel < 7 :
+Or for Laravel 6 :
 
 ```html
 @component('boilerplate::form', ['route' => ['boilerplate.users.edit', 1], 'method' => 'put', 'files' => true]) @endcomponent

@@ -1,7 +1,8 @@
 ---
 title: Infobox
-parent: Components
+parent: Blade components
 permalink: /components/infobox
+nav_order: 10
 ---
 
 # Infobox
@@ -11,7 +12,7 @@ permalink: /components/infobox
 <x-boilerplate::infobox message="Infobox" number="1234" bg-color="info" color="info" icon="far fa-folder" progress="65" description="65/100 closed items"/>
 ```
 
-Or for Laravel < 7
+Or for Laravel 6
 
 ```html
 @component('boilerplate::infobox', ['message' => 'Infobox', 'number' => '1234']) @endcomponent
