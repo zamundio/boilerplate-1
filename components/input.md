@@ -28,7 +28,7 @@ Attributes that can be used with this component :
 | --- | --- | --- | --- |
 | name | string | null | Input name (required) |
 | type | string | text | Type of input, can be text, email, password, file, number, date and select |
-| label | string | name | Input label, can be a translation string. Will use the input name if empty |
+| label | string | name | Input label, can be a translation string |
 | help | string | null | Help message that will be displayed under the input field |
 | value | mixed | null | Value of input |
 | options | array | [] | For select, array of options |
