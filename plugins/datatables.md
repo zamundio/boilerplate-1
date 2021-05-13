@@ -23,25 +23,23 @@ To use DataTables on your page you can use the loading view [`boilerplate::load.
 You can load plugins by passing their names to the loader :
 
 ```html
-@include('boilerplate::load.datatables', ['responsive' => true])
+@include('boilerplate::load.datatables', ['fixedHeader' => true])
 ```
 
 The available plugins are :
 
-| Name |
-| --- |
-| [autoFill](https://datatables.net/extensions/autofill/) |
-| [buttons](https://datatables.net/extensions/buttons/) |
-| [colReorder](https://datatables.net/extensions/colreorder/) |
-| [fixedHeader](https://datatables.net/extensions/fixedheader/) |
-| [keyTable](https://datatables.net/extensions/keytable/) |
-| [responsive](https://datatables.net/extensions/responsive/) |
-| [rowGroup](https://datatables.net/extensions/rowgroup/) |
-| [rowReorder](https://datatables.net/extensions/rowreorder/) |
-| [scroller](https://datatables.net/extensions/rowreorder/) |
-| [searchBuilder](https://datatables.net/extensions/searchbuilder/) |
-| [searchPanes](https://datatables.net/extensions/searchpanes/) |
-| [select](https://datatables.net/extensions/select/) |
+* [autoFill](https://datatables.net/extensions/autofill/)
+* [buttons](https://datatables.net/extensions/buttons/)
+* [colReorder](https://datatables.net/extensions/colreorder/)
+* [fixedHeader](https://datatables.net/extensions/fixedheader/)
+* [keyTable](https://datatables.net/extensions/keytable/)
+* [responsive](https://datatables.net/extensions/responsive/)
+* [rowGroup](https://datatables.net/extensions/rowgroup/)
+* [rowReorder](https://datatables.net/extensions/rowreorder/)
+* [scroller](https://datatables.net/extensions/rowreorder/)
+* [searchBuilder](https://datatables.net/extensions/searchbuilder/)
+* [searchPanes](https://datatables.net/extensions/searchpanes/)
+* [select](https://datatables.net/extensions/select/)
 
 ## API
 
