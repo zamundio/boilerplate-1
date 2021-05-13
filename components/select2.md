@@ -43,6 +43,7 @@ Attributes that can be used with this component :
 | allow-clear | boolean | false | Set to true to allow selection clear |
 | placeholder | string | "—" | The placeholder value will be displayed until a selection is made |
 | minimum-input-length | integer | 0 | Minimum input length before showing the options |
+| minimum-results-for-search | integer | 0 | Minimum number of options to have to show the search bar |
 
 All of the attributes that are not in the list above will be added as attributes to the input field :
 
