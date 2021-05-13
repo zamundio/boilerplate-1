@@ -42,6 +42,7 @@ Attributes that can be used with this component :
 | multiple | boolean | false | Set to true if select is multiple |
 | allow-clear | boolean | false | Set to true to allow selection clear |
 | placeholder | string | "—" | The placeholder value will be displayed until a selection is made |
+| minimum-input-length | integer | 0 | Minimum input length before showing the options |
 
 All of the attributes that are not in the list above will be added as attributes to the input field :
 

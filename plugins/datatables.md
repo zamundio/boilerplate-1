@@ -20,6 +20,29 @@ To use DataTables on your page you can use the loading view [`boilerplate::load.
 @include('boilerplate::load.datatables')
 ```
 
+You can load plugins by passing their names to the loader :
+
+```html
+@include('boilerplate::load.datatables', ['responsive' => true])
+```
+
+The available plugins are :
+
+| Name |
+| --- |
+| [autoFill](https://datatables.net/extensions/autofill/) |
+| [buttons](https://datatables.net/extensions/buttons/) |
+| [colReorder](https://datatables.net/extensions/colreorder/) |
+| [fixedHeader](https://datatables.net/extensions/fixedheader/) |
+| [keyTable](https://datatables.net/extensions/keytable/) |
+| [responsive](https://datatables.net/extensions/responsive/) |
+| [rowGroup](https://datatables.net/extensions/rowgroup/) |
+| [rowReorder](https://datatables.net/extensions/rowreorder/) |
+| [scroller](https://datatables.net/extensions/rowreorder/) |
+| [searchBuilder](https://datatables.net/extensions/searchbuilder/) |
+| [searchPanes](https://datatables.net/extensions/searchpanes/) |
+| [select](https://datatables.net/extensions/select/) |
+
 ## API
 
 Boilerplate is delivered with the excellent package [`yajra/laravel-datatables`](https://packagist.org/packages/yajra/laravel-datatables-oracle) to load data in controllers via ajax.
