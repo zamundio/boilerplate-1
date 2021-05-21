@@ -26,6 +26,9 @@ return [
 
     // Backend locale
     'locale'     => config('app.locale'),
+    
+    // Activating daily logs and showing log viewer
+    'logs'       => true,
 ];
 ```
 ---
@@ -92,3 +95,10 @@ Supported language are English (en), French (fr), Spanish (es) and Turkish (tr).
 folder to create. All you have to do is translate. If you want to share the language you have added, don’t hesitate to 
 make a pull request.
 
+## logs
+
+The `logs` parameter allows you to define if you want to add `daily` to the logging stack and enable the log viewer.
+
+<blockquote>
+Log viewer is only visible by administrators by default.
+</blockquote>
