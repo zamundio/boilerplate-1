@@ -10,12 +10,6 @@ permalink: /components/tinymce
 <x-boilerplate::tinymce />
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::tinymce') @endcomponent
-```
-
 Will render
 
 ![Toggle](../assets/img/components/tinymce.png)
@@ -34,4 +28,12 @@ All attributes  :
 
 ```html
 <x-boilerplate::tinymce id="example" name="example" :value="$content" />
+```
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::tinymce') @endcomponent
 ```

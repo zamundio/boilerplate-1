@@ -10,12 +10,6 @@ permalink: /components/input
 <x-boilerplate::input name="example" label="Example" />
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::input', ['name' => 'example', 'label' => 'Example']) @endcomponent
-```
-
 Will render
 
 ![Input](../assets/img/components/input.png)
@@ -69,3 +63,21 @@ Or you can use a slot to set more complex add-on :
 ```
 
 ![Input Prepend](../assets/img/components/input-prepend.png)
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::input', ['name' => 'example', 'label' => 'Example']) @endcomponent
+```
+
+With slot :
+
+```html
+@component('boilerplate::input', ['name' => 'example', 'label' => 'Example'])
+    @slot('prepend')
+        <button class="btn btn-secondary">Button</button>
+    @endslot
+@endcomponent
+```

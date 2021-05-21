@@ -14,7 +14,7 @@ TinyMCE is the an advanced WYSIWYG HTML editor designed to simplify website cont
 
 ## Component
 
-A Laravel Blade Component is available for TinyMCE, see the [component documentation](/components/tinymce)
+A Laravel Blade Component is available for TinyMCE, see the [component documentation](../components/tinymce)
 
 ## Usage
 

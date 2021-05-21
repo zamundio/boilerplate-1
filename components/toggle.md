@@ -11,13 +11,6 @@ permalink: /components/toggle
 <x-boilerplate::toggle label="Toggle label" color-on="green" checked/>
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::toggle') @endcomponent
-@component('boilerplate::toggle', ['label' => 'Toggle label', 'color-on' => 'green', 'checked' => true]) @endcomponent
-```
-
 Will render
 
 ![Toggle](../assets/img/components/toggle.png)
@@ -50,4 +43,13 @@ All of the attributes that are not in the list above will be added as attributes
 
 ```html
 <x-boilerplate::toggle type="radio" name="radio" value="test" :checked="$value === 'test'" />
+```
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::toggle') @endcomponent
+@component('boilerplate::toggle', ['label' => 'Toggle label', 'color-on' => 'green', 'checked' => true]) @endcomponent
 ```

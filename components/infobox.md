@@ -12,13 +12,6 @@ nav_order: 10
 <x-boilerplate::infobox message="Infobox" number="1234" bg-color="info" color="info" icon="far fa-folder" progress="65" description="65/100 closed items"/>
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::infobox', ['message' => 'Infobox', 'number' => '1234']) @endcomponent
-@component('boilerplate::infobox', ['message' => 'Infobox', 'number' => '1234', 'bg-color' => 'info', 'color' => 'info', 'icon' => 'far fa-folder', 'progress' => '65', 'description' => '65/100 closed items']) @endcomponent
-```
-
 Will render
 
 ![Infobox](../assets/img/components/infobox.png)
@@ -44,4 +37,13 @@ All of the attributes that are not in the list above will be added as attributes
 
 ```html
 <x-boilerplate::infobox :progress="round(0.64654 * 100)" />
+```
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::infobox', ['message' => 'Infobox', 'number' => '1234']) @endcomponent
+@component('boilerplate::infobox', ['message' => 'Infobox', 'number' => '1234', 'bg-color' => 'info', 'color' => 'info', 'icon' => 'far fa-folder', 'progress' => '65', 'description' => '65/100 closed items']) @endcomponent
 ```

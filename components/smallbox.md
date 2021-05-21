@@ -12,13 +12,6 @@ nav_order: 20
 <x-boilerplate::smallbox color="green" nb="1234" text="Smallbox text" icon="far fa-envelope" link="#" link-text="More informations"/>
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::smallbox') @endcomponent
-@component('boilerplate::smallbox', ['color' => 'green', 'nb' => '1234', 'text' => 'Smallbox text', 'icon' => 'far fa-envelope', 'link' => '#', 'link-text' => 'More informations']) @endcomponent
-```
-
 Will render
 
 ![Smallbox](../assets/img/components/smallbox.png)
@@ -43,4 +36,13 @@ All of the attributes that are not in the list above will be added as attributes
 
 ```html
 <x-boilerplate::infobox :link="route('boilerplate.users.index')" :link-text="__('boilerplate::users.list.title')"/>
+```
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::smallbox') @endcomponent
+@component('boilerplate::smallbox', ['color' => 'green', 'nb' => '1234', 'text' => 'Smallbox text', 'icon' => 'far fa-envelope', 'link' => '#', 'link-text' => 'More informations']) @endcomponent
 ```

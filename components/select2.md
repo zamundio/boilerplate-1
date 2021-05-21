@@ -14,16 +14,6 @@ permalink: /components/select2
 </x-boilerplate::select2>
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::select2', ['name' => 'example', 'label' => 'Example'])
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-@endcomponent
-```
-
 Will render
 
 ![Input](../assets/img/components/select2.png)
@@ -43,7 +33,7 @@ Attributes that can be used with this component :
 | allow-clear | boolean | false | Set to true to allow selection clear |
 | placeholder | string | "—" | The placeholder value will be displayed until a selection is made |
 | minimum-input-length | integer | 0 | Minimum input length before showing the options |
-| minimum-results-for-search | integer | 0 | Minimum number of options to have to show the search bar |
+| minimum-results-for-search | integer | 10 | Minimum number of options to have to show the search bar |
 
 All of the attributes that are not in the list above will be added as attributes to the input field :
 
@@ -96,3 +86,15 @@ The controller must return selectable options in json format with this structure
 ```
 
 Have a look to the Select2 official documentation : [https://select2.org/data-sources/ajax](https://select2.org/data-sources/ajax)
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::select2', ['name' => 'example', 'label' => 'Example'])
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+@endcomponent
+```

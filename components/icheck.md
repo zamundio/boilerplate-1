@@ -10,12 +10,6 @@ permalink: /components/icheck
 <x-boilerplate::icheck name="example" label="Checkbox example" checked />
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::input', ['name' => 'example', 'label' => 'Checkbox example', 'checked' => true]) @endcomponent
-```
-
 Will render
 
 ![Icheck](../assets/img/components/icheck.png)
@@ -47,4 +41,12 @@ All of the attributes that are not in the list above will be added as attributes
 
 ```html
 <x-boilerplate::icheck type="radio" name="radio" value="test" :checked="$value === 'test'" />
+```
+
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
+
+```html
+@component('boilerplate::input', ['name' => 'example', 'label' => 'Checkbox example', 'checked' => true]) @endcomponent
 ```

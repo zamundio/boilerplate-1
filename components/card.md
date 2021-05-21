@@ -13,14 +13,6 @@ nav_order: 0
 </x-boilerplate::card>
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::card')
-    A card component
-@endcomponent
-```
-
 Will render
 
 ![Card](../assets/img/components/card.png)
@@ -62,20 +54,6 @@ You can set a specific header and / or footer with slots :
 </x-boilerplate::card>
 ```
 
-Or for Laravel 6
-
-```html
-@component('boilerplate::card')
-    @slot('header')
-        Card header content
-    @endslot
-    Card content
-    @slot('footer')
-        Card footer content
-    @endslot
-@endcomponent
-```
-
 You can also set tools buttons (buttons on the right in the header) with a slot :
 
 ```html
@@ -113,27 +91,26 @@ For tabs cards, you have to set tabs option :
 </x-boilerplate::card>
 ```
 
-Or for Laravel 6
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
 
 ```html
-@component('boilerplate::card', ['tabs' => true])
+@component('boilerplate::card', ['color' => 'red'])
+    A card component
+@endcomponent
+```
+
+With slots :
+
+```html
+@component('boilerplate::card')
     @slot('header')
-        <ul class="nav nav-tabs" id="custom-tabs-two-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="tab1-tab" data-toggle="pill" href="#tab1" role="tab" aria-controls="custom-tabs-two-home" aria-selected="true">Tab 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="tab2-tab" data-toggle="pill" href="#tab2" role="tab" aria-controls="custom-tabs-two-profile" aria-selected="false">Tab 2</a>
-            </li>
-        </ul>
+        Card header content
     @endslot
-    <div class="tab-content" id="custom-tabs-two-tabContent">
-        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-            Tab 1 content
-        </div>
-        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-            Tab 2 content
-        </div>
-    </div>
+    Card content
+    @slot('footer')
+        Card footer content
+    @endslot
 @endcomponent
 ```

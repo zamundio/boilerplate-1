@@ -14,7 +14,7 @@ icheck-bootstrap is pure css solution for displaying twitter bootstrap style che
 
 ## Component
 
-A Laravel Blade Component is available for iCheck, see the [component documentation](/components/icheck)
+A Laravel Blade Component is available for iCheck, see the [component documentation](../components/icheck)
 
 ## Usage
 

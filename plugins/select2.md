@@ -12,6 +12,10 @@ Select2 gives you a customizable select box with support for searching, tagging,
 
 ![](../assets/img/select2.png)
 
+## Component
+
+A Laravel Blade Component is available for select2, see the [component documentation](../components/select2)
+
 ## Usage
 
 To use select2 you can use the loading view [`boilerplate::load.select2`](https://github.com/sebastienheyd/boilerplate/blob/e1dc4b29920f011271a1a7ad682c3e82643180d9/src/resources/views/load/select2.blade.php)

@@ -7,20 +7,16 @@ permalink: /components/form
 # Form
 
 ```html
-<x-boilerplate::form> </x-boilerplate::form>
-```
-
-Or for Laravel 6
-
-```html
-@component('boilerplate::form') @endcomponent
+<x-boilerplate::form>
+    // your form here...
+</x-boilerplate::form>
 ```
 
 Will render
 
 ```html
 <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden" value="....">
-
+    // your form here...
 </form>
 ```
 
@@ -40,10 +36,14 @@ All of the attributes that are not in the list above will be added as attributes
 **NB** : for non primitive values that not using a simple string you have to use the `:` character as a prefix :
 
 ```html
-<x-boilerplate::form :route="['boilerplate.users.edit', 1]" method="put" files> </x-boilerplate::form>
+<x-boilerplate::form :route="['boilerplate.users.edit', 1]" method="put" files>
+    // your form here...
+</x-boilerplate::form>
 ```
 
-Or for Laravel 6 :
+## Laravel 6
+
+Laravel 6 does not support Blade x components, but you can use the `@component` directive instead :
 
 ```html
 @component('boilerplate::form', ['route' => ['boilerplate.users.edit', 1], 'method' => 'put', 'files' => true]) @endcomponent
