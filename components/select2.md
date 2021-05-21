@@ -7,6 +7,12 @@ permalink: /components/select2
 # Select2
 
 ```html
+<x-boilerplate::select2 name="example" label="Example" :options="[1 => 'Option 1', 2 => 'Option 2', 3 => 'Option 3']" />
+```
+
+Or
+
+```html
 <x-boilerplate::select2 name="example" label="Example">
     <option value="1">Option 1</option>
     <option value="2">Option 2</option>
@@ -28,12 +34,14 @@ Attributes that can be used with this component :
 | label | string | name | Input label, can be a translation string |
 | id | string | random id | Id of the input, if no value will set a unique random id |
 | help | string | null | Help message that will be displayed under the input field |
+| options | array | null | Associative array of options |
+| selected | string &#124; array | null | A string or an array of the selected options |
 | ajax | string | null | Ajax URL to call |
 | multiple | boolean | false | Set to true if select is multiple |
 | allow-clear | boolean | false | Set to true to allow selection clear |
 | placeholder | string | "—" | The placeholder value will be displayed until a selection is made |
-| minimum-input-length | integer | 0 | Minimum input length before showing the options |
-| minimum-results-for-search | integer | 10 | Minimum number of options to have to show the search bar |
+| minimum-input-length | integer | 0 | Minimum search term length before showing the options, efficient with large data sets |
+| minimum-results-for-search | integer | 10 | Minimum number of results required to display the search box |
 
 All of the attributes that are not in the list above will be added as attributes to the input field :
 
