@@ -15,7 +15,7 @@ The `config/boilerplate/locale.php` file allows to define the language options o
 ```php
 return [
     'default' => config('app.locale'),
-    'switch' => true,
+    'switch' => false,
     'allowed' => ['en', 'es', 'fa', 'fr', 'it', 'tr'],
     'languages' => [
         'en' => ['label' => 'English', 'datatable' => 'English'],
