@@ -25,6 +25,10 @@ return [
             'table'  => 'users',
         ],
     ],
+    'throttle' => [
+        'maxAttempts' => 3,            // Maximum number of login attempts to allow
+        'decayMinutes' => 1,           // Number of minutes to wait before login will be available again
+    ],
 ];
 ```
 
@@ -57,3 +61,10 @@ The `providers` parameter overwrites `config/auth.php` to use boilerplate's user
 (`Sebastienheyd\Boilerplate\Models\User::class`) instead of the default Laravel one (`App\User::class`).
 
 This setting allows you to define your own user class or your own provider if you want to add features.
+
+---
+
+## throttle
+
+This configuration section allows you to set how many times a user can try to login unsuccessfully, and how many minutes 
+he must wait until he can try again. 
