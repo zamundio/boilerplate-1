@@ -22,6 +22,9 @@ $theme['navbar'] += [
     'right' => [],
 ];
 
+// Url to favicon
+$theme['favicon'] = null;
+
 return $theme;
 ```
 ---
@@ -40,3 +43,10 @@ Allows you to define additionnal views that will be displayed to the top bar.
 
 See [How-to add items to the top bar](/howto/add-navbar-items)
 
+---
+
+## favicon
+
+Allows you to define an url to the favicon.
+
+If null, a default favicon will be shown.
