@@ -28,6 +28,8 @@ Attributes that can be used with this component :
 | options | array | [] | For select, array of options |
 | prepend-text | string | Empty string | Text that will be added on the left side of the input, see "Append / Prepend" below | 
 | append-text | string | Empty string | Text that will be added on the right side of the input, see "Append / Prepend" below | 
+| group-class | string | null | Additionnal class that will be added to form-group | 
+| group-id | string | null | ID that will be added to form-group | 
 
 All of the attributes that are not in the list above will be added as attributes to the input field :
 
