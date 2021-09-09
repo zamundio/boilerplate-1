@@ -7,7 +7,7 @@ permalink: /components/tinymce
 # TinyMCE
 
 ```html
-<x-boilerplate::tinymce />
+<x-boilerplate::tinymce name="html" />
 ```
 
 Will render
@@ -16,15 +16,25 @@ Will render
 
 > If you have installed the package [sebastien/boilerplate-media-manager](https://github.com/sebastienheyd/boilerplate-media-manager), the media manager will be automatically added to TinyMCE for images and documents.
 
-## Attributes
+## Value
 
-All attributes  :
+The value can be set by using slot or the value attribute
 
 ```html
-<x-boilerplate::tinymce id="example" name="example" />
+<x-boilerplate::tinymce name="example">
+    <h2>TinyMCE demo</h2><p>Lorem ipsum dolor sit amet.</p>
+</x-boilerplate::tinymce>
 ```
 
-**NB** : for non primitive values that not using a simple string you have to use the `:` character as a prefix :
+or
+
+```html
+<x-boilerplate::tinymce name="example" value="<h2>TinyMCE demo</h2><p>Lorem ipsum dolor sit amet.</p>" />
+```
+
+## Attributes
+
+For all non primitive values that not using a simple string you have to use the `:` character as a prefix :
 
 ```html
 <x-boilerplate::tinymce id="example" name="example" :value="$content" />
