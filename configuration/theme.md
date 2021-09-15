@@ -16,14 +16,15 @@ The `config/boilerplate/theme.php` file allows to define the backend theme param
 <?php
 $theme = include __DIR__.'/themes/default.php';
 
-// Additionnal views to append items to the navbar
-$theme['navbar'] += [
-    'left'  => [],
-    'right' => [],
+$theme += [
+    'navbar' => [               // Additionnal views to append items to the navbar
+        'left' => [],
+        'right' => [],
+    ],
+    'favicon' => null,          // Favicon url
+    'fullscreen' => true,       // Fullscreen switch
+    'darkmode' => true,         // Dark mode switch
 ];
-
-// Url to favicon
-$theme['favicon'] = null;
 
 return $theme;
 ```
@@ -50,3 +51,15 @@ See [How-to add items to the top bar](/howto/add-navbar-items)
 Allows you to define an url to the favicon.
 
 If null, a default favicon will be shown.
+
+---
+
+## fullscreen
+
+If true will show a switch to activate the full screen.
+
+---
+
+## darkmode
+
+If true will show a switch to activate the dark mode. 

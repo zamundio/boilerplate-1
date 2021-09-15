@@ -42,10 +42,10 @@ Other packages to extend the features :
 * Forms & Html helpers by [laravelcollective/html](https://github.com/laravelcollective/html)
 * Menu dynamically builded by [lavary/laravel-menu](https://github.com/lavary/laravel-menu)
 * Menu items activated by [hieu-le/active](https://github.com/letrunghieu/active)
-* Server-side datatables methods provided by [yajra/laravel-datatables](https://github.com/yajra/laravel-datatables)
+* Server-side datatables methods provided by [yajra/laravel-datatables](https://yajrabox.com/docs/laravel-datatables)
 * Image manipulation by [intervention/image](https://github.com/intervention/image)
 * Logs visualization by [arcanedev/log-viewer](https://github.com/ARCANEDEV/LogViewer)
 * Gravatar import by [thomaswelton/laravel-gravatar](https://github.com/thomaswelton/laravel-gravatar)
 * Laravel Blade components for AdminLTE 3
 * Javascript session keep-alive
-* Localized English / French / Italian / Spanish / Turkish
+* [Localized](https://github.com/sebastienheyd/boilerplate/tree/master/src/resources/lang)
