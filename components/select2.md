@@ -42,6 +42,8 @@ Attributes that can be used with this component :
 | placeholder | string | "—" | The placeholder value will be displayed until a selection is made |
 | minimum-input-length | integer | 0 | Minimum search term length before showing the options, efficient with large data sets |
 | minimum-results-for-search | integer | 10 | Minimum number of results required to display the search box |
+| group-class | string | null | Additionnal class that will be added to form-group | 
+| group-id | string | null | ID that will be added to form-group | 
 
 All of the attributes that are not in the list above will be added as attributes to the input field :
 
