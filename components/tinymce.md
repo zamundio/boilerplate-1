@@ -41,6 +41,7 @@ Attributes that can be used with this component :
 | name | string | null | Input name (required) |
 | label | string | name | Input label, can be a translation string |
 | help | string | null | Help message that will be displayed under the input field |
+| sticky | boolean | false | True if toolbar must stick to the top of the page |
 | value | mixed | null | Value of input | 
 | group-class | string | null | Additionnal class that will be added to form-group | 
 | group-id | string | null | ID that will be added to form-group | 

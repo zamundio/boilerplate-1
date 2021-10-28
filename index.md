@@ -35,10 +35,10 @@ Other packages to extend the features :
 
 ## Features
 
-* Configurable backend theme [AdminLTE 3](https://adminlte.io/docs/3.0/)
+* Configurable [backend theme](https://sebastienheyd.github.io/boilerplate/howto/change-theme) and [components](https://sebastienheyd.github.io/boilerplate/components/) for [AdminLTE 3](https://adminlte.io/docs/3.0/)
 * Css framework [Bootstrap 4](https://getbootstrap.com/)
 * Icons by [Font Awesome 5](https://fontawesome.com/)
-* Role-based permissions provided by [santigarcor/laratrust](https://github.com/santigarcor/laratrust)
+* Role-based permissions support by [santigarcor/laratrust](https://github.com/santigarcor/laratrust)
 * Forms & Html helpers by [laravelcollective/html](https://github.com/laravelcollective/html)
 * Menu dynamically builded by [lavary/laravel-menu](https://github.com/lavary/laravel-menu)
 * Menu items activated by [hieu-le/active](https://github.com/letrunghieu/active)
@@ -46,6 +46,6 @@ Other packages to extend the features :
 * Image manipulation by [intervention/image](https://github.com/intervention/image)
 * Logs visualization by [arcanedev/log-viewer](https://github.com/ARCANEDEV/LogViewer)
 * Gravatar import by [thomaswelton/laravel-gravatar](https://github.com/thomaswelton/laravel-gravatar)
-* Laravel Blade components for AdminLTE 3
+* Default languages support by [overtrue/laravel-lang](https://github.com/overtrue/laravel-lang) and [Laravel-Lang/lang](https://github.com/Laravel-Lang/lang)
 * Javascript session keep-alive
 * [Localized](https://github.com/sebastienheyd/boilerplate/tree/master/src/resources/lang)

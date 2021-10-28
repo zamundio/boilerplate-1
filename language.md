@@ -15,9 +15,6 @@ You can activate a language switch by setting to true the `switch` parameter in 
 selector will so be shown on the login page and in the top bar. Select allowed switchable languages by setting the `allowed` parameter
 in `config/boilerplate/locale.php`
 
-When you run `php artisan vendor:publish --tag=boilerplate`, only the language files for form validation are copied 
-for supported languages. Thanks to [Laravel-Lang/lang](https://github.com/Laravel-Lang/lang) package !
-
 [See locale.php configuration file](../configuration/locale)
 
 ## Add a new language
