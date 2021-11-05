@@ -4,7 +4,7 @@ parent: Blade components
 permalink: /components/password
 ---
 
-# Input
+# Password
 
 ```html
 <x-boilerplate::password name="password" />
