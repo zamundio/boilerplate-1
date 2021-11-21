@@ -1,6 +1,6 @@
 ---
 title: How-to
-nav_order: 40
+nav_order: 35
 has_children: true
 has_toc: true
 ---
