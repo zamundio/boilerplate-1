@@ -1,0 +1,67 @@
+---
+title: Create a DataTable
+parent: Datatables
+permalink: /datatables/create
+nav_order: 5
+---
+
+# Create a DataTable
+
+The [datatable component](../components/datatable) uses a class to operate. The class will specify the [options](options) of the table, the [data source](datasource), and the [columns](column) to be used.
+
+This class can be generated via an artisan command.
+
+## Generating a DataTable class
+
+To generate a new class that can be used with the component, you can use the artisan command `php artisan boilerplate:datatable`
+
+You can define the name of the component directly by specifying it :
+
+```
+php artisan boilerplate:datatable users
+```
+
+You can also define the model to use as data source directly :
+
+```
+php artisan boilerplate:datatable users --model="App\Models\User" 
+```
+
+> Defining a model as data source will automatically scan the database to define the visible fields as datatable columns.
+
+### For package developpers
+
+By default, datatable classes are placed in the folder `app\Datatables`
+
+But you can declare your own datatable class within your package by using the `boilerplate.datatables` singleton :
+
+```
+app('boilerplate.datatables')->registerDatatable(\MyVendoName\MyPackage\MyModelDatatable::class); 
+```
+
+## Calling the datatable
+
+The attribute `slug` will be used as `name` by the component to know which class must be called.
+
+Set the `slug` property in the datatable class :
+
+```php
+use Sebastienheyd\Boilerplate\Datatables\Datatable;
+
+class ExampleDatatable extends Datatable
+{
+    public $slug = 'example';
+
+    //...
+}
+```
+
+Then call the datatable :
+
+```html
+<x-boilerplate::datatable name="example" />
+```
+
+## Next step
+
+> [See how to set the data source](datasource)
