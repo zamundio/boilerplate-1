@@ -71,6 +71,8 @@ Shows buttons that will trigger some actions. The arguments order is the order o
 $this->buttons('filters', 'csv', 'refresh')
 ```
 
+Built-in buttons : `filters`, `colvis`, `csv`, `excel`, `copy`, `print`, `refresh`
+
 ## permissions
 
 Sets the permissions to have to show the DataTable.
