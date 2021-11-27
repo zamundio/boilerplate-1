@@ -16,7 +16,9 @@ class ExampleDatatable extends Datatable
 {
     public function setUp()
     {
-        $this->order('created_at', 'desc')
+        $this->permissions('users_crud')
+            ->buttons('filters', 'csv', 'print')
+            ->order('created_at', 'desc')
             ->pageLength(50)
             ->stateSave();
     }
@@ -27,16 +29,17 @@ class ExampleDatatable extends Datatable
 
 | option | default | description |
 | --- | --- | --- |
-| [order()](#order) | [] | Using this parameter you can define which column(s) the order is performed upon, and the ordering direction |
-| [stateSave](#statesave) | false | Restore table state on page reload |
-| [showCheckboxes](#showcheckboxes) | false | Show checkbox on each row |
-| [lengthMenu()](#lengthmenu) | [10, 25, 50, 100] | Specify the entries in the length drop down |
+| [order()](#order) | [] | Defines which column(s) the order is performed upon, and the ordering direction |
+| [buttons()](#buttons) | ['filters'] | Shows buttons that will trigger some actions like showing filters, exporting to csv, ... |
+| [permissions()](#permissions) | ['backend_access'] | Sets the permissions to have to show the DataTable. |
+| [stateSave](#statesave) | false | Restores table state on page reload |
+| [showCheckboxes](#showcheckboxes) | false | Shows checkbox on each row |
+| [lengthMenu()](#lengthmenu) | [[10, 25, 50, 100, -1],[10,25,50,100,'∞']] | Specifies the entries in the length drop down |
 | [pageLength()](#pagelength) | 10 | Number of rows to display on a single page when using pagination |
 | [pagingType()](#pagingtype) | simple_numbers | Type of buttons shown in the pagination control |
-| [setRowId()](#setrowid) | null | Setting id to rows |
-| [setRowClass()](#setrowclass) | null | Setting class to rows |
-| [setRowAttr()](#setrowattr) | null | Setting attribute(s) to rows |
-| [noFilters()](#nofilters) | visible | Disable filters |
+| [setRowId()](#setrowid) | null | Sets id to rows |
+| [setRowClass()](#setrowclass) | null | Sets class to rows |
+| [setRowAttr()](#setrowattr) | null | Sets attribute(s) to rows |
 | [noPaging()](#nopaging) | visible | Disable paging |
 | [noLengthChange()](#nolengthchange) | visible | Disable length change |
 | [noSorting()](#nosorting) | visible | Disable sorting |
@@ -60,9 +63,25 @@ Multi-column ordering as the initial state:
 $this->order(['name' => 'desc', 'created_at' => 'desc'])
 ```
 
+## buttons
+
+Shows buttons that will trigger some actions. The arguments order is the order of appearance.
+
+```php
+$this->buttons('filters', 'csv', 'refresh')
+```
+
+## permissions
+
+Sets the permissions to have to show the DataTable.
+
+```php
+$this->permissions('users_crud', 'roles')
+```
+
 ## stateSave
 
-Enable state saving:
+Enables state saving:
 
 ```php
 $this->stateSave()
@@ -70,7 +89,7 @@ $this->stateSave()
 
 ## showCheckboxes
 
-Show checkbox on every row:
+Shows checkbox on every row:
 
 ```php
 $this->showCheckboxes()
@@ -78,13 +97,13 @@ $this->showCheckboxes()
 
 ## lengthMenu
 
-Show options 10, 50 and 100 records:
+Sets length menu options.
 
 ```php
 $this->lengthMenu([10,50,100])
 ```
 
-Show options 10, 50, 100 and all records:
+To show options 10, 50, 100 and all records:
 
 ```php
 $this->lengthMenu([[10, 50, 100, -1] , [10, 50, 100, 'All']])
@@ -92,7 +111,7 @@ $this->lengthMenu([[10, 50, 100, -1] , [10, 50, 100, 'All']])
 
 ## pageLength
 
-Show 50 records per page:
+Shows 50 records per page:
 
 ```php
 $this->pageLength(50])
@@ -100,7 +119,7 @@ $this->pageLength(50])
 
 ## pagingType
 
-Setting `numbers` as paging Type
+Sets `numbers` as paging Type
 
 ```php
 ->setPagingType('numbers')
@@ -117,13 +136,13 @@ Allowed types are
 
 ## setRowId
 
-Setting row id via `column` name.
+Sets row id via `column` name.
 
 ```php
 ->setRowId('id')
 ```
 
-Setting row id via `closure`.
+Sets row id via `closure`.
 
 ```php
 ->setRowId(function ($user) {
@@ -131,7 +150,7 @@ Setting row id via `closure`.
 })
 ```
 
-Setting row id via `blade` string.
+Sets row id via `blade` string.
 
 ```php
 ->setRowId('{{$id}}')
@@ -139,7 +158,7 @@ Setting row id via `blade` string.
 
 ## setRowClass
 
-Setting row class via `closure`.
+Sets row class via `closure`.
 
 ```php
 ->setRowClass(function ($user) {
@@ -149,7 +168,7 @@ return $user->id % 2 == 0 ? 'alert-success' : 'alert-warning';
 
 ## setRowAttr
 
-Setting row attribute(s) via `closure`.
+Sets row attribute(s) via `closure`.
 
 ```php
 ->setRowAttr([
@@ -162,7 +181,7 @@ Setting row attribute(s) via `closure`.
 ])
 ```
 
-Setting row attribute(s) via `blade` string.
+Sets row attribute(s) via `blade` string.
 
 ```php
 ->setRowAttr([
@@ -171,17 +190,9 @@ Setting row attribute(s) via `blade` string.
 ])
 ```
 
-## noFilters
-
-Disable filters:
-
-```php
-$this->noFilters() 
-```
-
 ## noPaging
 
-Disable paging:
+Disables paging:
 
 ```php
 $this->noPaging() 
@@ -189,7 +200,7 @@ $this->noPaging()
 
 ## noLengthChange
 
-Disable length change:
+Disables length change:
 
 ```php
 $this->noLengthChange() 
@@ -197,7 +208,7 @@ $this->noLengthChange()
 
 ## noSorting
 
-Disable sorting:
+Disables sorting:
 
 ```php
 $this->noSorting() 
@@ -205,7 +216,7 @@ $this->noSorting()
 
 ## noOrdering
 
-Disable sorting (alias):
+Disables sorting (alias):
 
 ```php
 $this->noOrdering() 
@@ -213,7 +224,7 @@ $this->noOrdering()
 
 ## noSearching
 
-Disable searching:
+Disables searching:
 
 ```php
 $this->noSearching() 
@@ -221,7 +232,7 @@ $this->noSearching()
 
 ## noInfo
 
-Disable table informations:
+Disables table informations:
 
 ```php
 $this->noInfo() 
