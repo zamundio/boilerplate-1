@@ -37,6 +37,7 @@ public function columns(): array
 | [name](#name) | Relation name to use for eager loading relationships |
 | [filter](#filter) | Implements a custom search for a specific column |
 | [filterOptions](#filteroptions) | Select options for the column filter |
+| [filterType](#filtertype) | Select the type of the filter to apply |
 | [fromNow](#fromnow) | For dates, replace the date by a “from now” text |
 | [dateFormat](#dateformat) | For dates, will replace the date by the localized date |
 | [notSearchable](#notsearchable) | Disables search (and filter) of the column |
@@ -135,6 +136,24 @@ Replaces the input text field by a select containing the options returned by thi
     return Role::all()->pluck('display_name', 'name')->toArray();
 })
 ```
+
+If select must be multiple, set the second argument to `true`.  
+
+```php
+->filterOptions(function () {
+    return Role::all()->pluck('display_name', 'name')->toArray();
+}, true)
+```
+
+## filterType
+
+Sets the filter type to use.
+
+```php
+->filterType('daterangepicker')
+```
+
+Authorized types are : `text`, `daterangepicker`, `select`, `select-multiple`
 
 ## fromNow
 

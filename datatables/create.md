@@ -27,7 +27,7 @@ You can also define the model to use as data source directly :
 php artisan boilerplate:datatable users --model="App\Models\User" 
 ```
 
-> Defining a model as data source will automatically scan the database to define the visible fields as datatable columns.
+> Defining a model as data source will automatically scan the database to define the visible fields as datatable columns. You can avoid this scan by using the `--nodb` option, in this case the generator will only use the fields declared in the model class.
 
 ### For package developpers
 
