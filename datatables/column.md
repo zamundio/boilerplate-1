@@ -26,6 +26,14 @@ public function columns(): array
     Column::add('Created At')
         ->data('created_at')
         ->dateFormat(),
+        
+    Column::add()
+        ->actions(function(User $user) {
+            return join([
+                Button::edit('boilerplate.users.edit', $user),          
+                Button::delete('boilerplate.users.edit', $user),          
+            ]);
+        }),
   ];
 } 
 ```
@@ -215,11 +223,15 @@ Or use the [`Button` class](button)
 
 ```php
 ->actions(function (User $user) {
-    return Button::add()
-        ->route('boilerplate.users.edit', $user->id)
-        ->icon('pencil-alt')
-        ->color('primary')
-        ->make();
+    return join([
+        Button::show('boilerplate.users.show', $user),
+        Button::edit('boilerplate.users.edit', $user),
+        Button::add()
+            ->link('https://sebastienheyd.github.io/boilerplate/')
+            ->icon('help')
+            ->color('info')
+            ->make(),
+    ]);
 })
 ```
 

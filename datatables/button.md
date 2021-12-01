@@ -27,7 +27,24 @@ Button::add()
 | [class](#class) | Sets additional class |
 | [route](#route) | Sets the button link href by using a route |
 | [link](#link) | Sets the button link href |
+| [attributes](#attributes) | Sets HTML attributes to the button |
 | [make](#make) | Renders the button |
+
+## Button aliases
+
+```php
+Button::show('route.to.resource.show', $resource);
+```
+
+```php
+Button::edit('route.to.resource.edit', $resource);
+```
+
+```php
+Button::delete('route.to.resource.destroy', $resource);
+```
+
+> `Button::delete` will show a modal to confirm the deletion. You can set another question by using the [`Datatable::locale()` method](options#locale).
 
 ---
 
@@ -97,6 +114,14 @@ Sets the button link href.
 
 ```php
 ->link(route('boilerplate.users.edit', $user->id))
+```
+
+## attributes
+
+Sets HTML attributes.
+
+```php
+->attributes(['data-action' => 'delete'])
 ```
 
 ## make

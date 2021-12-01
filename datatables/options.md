@@ -46,6 +46,7 @@ class ExampleDatatable extends Datatable
 | [noOrdering()](#noordering) | visible | Disable sorting (alias) |
 | [noSearching()](#nosearching) | visible | Disable searching |
 | [noInfo()](#noinfo) | visible | Disable table informations |
+| [locale()](#locale) | [] | Set different locale for generic buttons |
 
 ---
 
@@ -239,6 +240,19 @@ Disables table informations:
 ```php
 $this->noInfo() 
 ```
+
+## locale
+
+Sets different locale to use with generic buttons:
+
+```php
+$this->locale([
+    'deleteConfirm' => 'Delete the article?',
+    'deleteSuccess' => 'Article has been successfully deleted',    
+])
+```
+
+> Default locale can be found in the [`datatable.php`](https://github.com/sebastienheyd/boilerplate/blob/master/src/resources/lang/en/datatable.php) lang file. 
 
 ## Next step
 
