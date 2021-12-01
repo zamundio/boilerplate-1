@@ -44,7 +44,7 @@ Button::edit('route.to.resource.edit', $resource);
 Button::delete('route.to.resource.destroy', $resource);
 ```
 
-> `Button::delete` will show a modal to confirm the deletion. You can set another question by using the [`Datatable::locale()` method](options#locale).
+> `Button::delete` will show a modal to confirm the deletion. You can set another confirmation message by using the [`Datatable::locale()` method](options#locale).
 
 ---
 
