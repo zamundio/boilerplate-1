@@ -13,7 +13,11 @@ This class can be generated via an artisan command.
 
 ## Generating a DataTable class
 
-To generate a new class that can be used with the component, you can use the artisan command `php artisan boilerplate:datatable`
+To generate a new class that can be used with the component, you can use the artisan command:
+
+```
+php artisan boilerplate:datatable
+```
 
 You can define the name of the component directly by specifying it :
 
