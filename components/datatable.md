@@ -16,7 +16,7 @@ Will render
 
 ## How to create a DataTable
 
-[See the dedicated documentation](../datatables/)
+[See the dedicated documentation](../datatables/create)
 
 ## Laravel 6
 
