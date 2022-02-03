@@ -18,6 +18,7 @@ The `config/boilerplate/auth.php` file allows to define the authentication and r
 return [
     'register'      => false,           // Allow to register new users on backend login page
     'register_role' => 'backend_user',  // Given role to new users (except the first one who is admin)
+    'verify_email'  => false,           // Users must have a valid e-mail (a verification email is sent when a user registers)
     'providers'     => [
         'users' => [
             'driver' => 'eloquent',
@@ -52,6 +53,16 @@ above is set to "true").
 The default value is `backend_user`
 
 > The first user created will always have the role admin 
+
+---
+
+## verify_email
+
+If `verify_email` is set to `true` all new registered users must confirm their e-mail address before accessing the application.
+
+To do this, an e-mail is sent in which each user must click to confirm his address.
+
+The default value is `false`.
 
 ---
 
