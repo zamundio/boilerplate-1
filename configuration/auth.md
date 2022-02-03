@@ -64,6 +64,8 @@ To do this, an e-mail is sent in which each user must click to confirm his addre
 
 The default value is `false`.
 
+> Only the first user (admin) and users invited to join the admin by e-mail will not be asked to confirm their e-mails.
+
 ---
 
 ## providers
