@@ -34,19 +34,11 @@ return [
 
 The `default` parameter allows you to define the language used in the back office. 
 
-This makes possible to use a different language from the general language of the application, to work with your 
-developments it will then be necessary to define the `boilerplatelocale` middleware on your routes.
+This makes possible to use a different language from the general language of the application, to work with your developments it will then be necessary to define the `boilerplatelocale` middleware on your routes.
 
-<blockquote>
-<p>
-The <code>boilerplatelocale</code> middleware will replace default application locale by the locale set in the boilerplate's 
-configuration file.
-</p>
-<p>
-See <a href="https://laravel.com/docs/master/middleware#assigning-middleware-to-routes">Laravel documentation</a> on assigning 
-middleware to routes.
-</p>
-</blockquote>
+> The `boilerplatelocale` middleware will replace default application locale by the locale set in the boilerplate's configuration file.
+>
+> See [Laravel documentation](https://laravel.com/docs/master/middleware#assigning-middleware-to-routes) on assigning middleware to routes.
 
 To not breaking older version of Boilerplate, the parameter `locale` in `config/boilerplate/app.php` is used priorly if exists.
 

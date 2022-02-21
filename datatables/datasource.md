@@ -63,6 +63,32 @@ class ExampleDatatable extends Datatable
 }
 ```
 
+## Passing parameters
+
+Sometimes you need to pass some parameters to the ajax call that retrieves the data. To do that, you can pass the parameters 
+with the `ajax` argument :
+
+```html
+<x-boilerplate::datatable name="example" :ajax="['role' => 'admin']"/>
+```
+
+Then you can retrieve the value by getting the posted argument :
+
+```php
+use Sebastienheyd\Boilerplate\Datatables\Datatable;
+use DB;
+
+class ExampleDatatable extends Datatable
+{
+    public function datasource()
+    {
+        return DB::table('users')->whereRoleIs(request()->post('role'));
+    }
+
+    //...
+}
+```
+
 ## Next step
 
 > [See datatable options](options)
