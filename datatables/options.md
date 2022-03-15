@@ -31,6 +31,7 @@ class ExampleDatatable extends Datatable
 | --- | --- | --- |
 | [order()](#order) | [] | Defines which column(s) the order is performed upon, and the ordering direction |
 | [buttons()](#buttons) | ['filters'] | Shows buttons that will trigger some actions like showing filters, exporting to csv, ... |
+| [condensed()](#condensed) | false | If called, the table will be condensed | 
 | [permissions()](#permissions) | ['backend_access'] | Sets the permissions to have to show the DataTable. |
 | [stateSave](#statesave) | false | Restores table state on page reload |
 | [showCheckboxes](#showcheckboxes) | false | Shows checkbox on each row |
@@ -73,6 +74,14 @@ $this->buttons('filters', 'csv', 'refresh')
 ```
 
 Built-in buttons : `filters`, `colvis`, `csv`, `excel`, `copy`, `print`, `refresh`
+
+## condensed
+
+If called, the table will be condensed.
+
+```php
+$this->condensed()
+```
 
 ## permissions
 

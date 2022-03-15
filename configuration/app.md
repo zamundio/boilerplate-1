@@ -24,9 +24,6 @@ return [
     // Redirect to this route after login
     'redirectTo' => 'boilerplate.dashboard',
 
-    // Backend locale
-    'locale'     => config('app.locale'),
-    
     // Activating daily logs and showing log viewer
     'logs'       => true,
 ];
@@ -68,32 +65,6 @@ The `redirectTo` parameter allows you to define the route to which you will be r
 The default value is `"boilerplate.dashboard"`
 
 ---
-
-## locale
-
-The `locale` parameter allows you to define the language used in the application. 
-
-This makes possible to use a different language from the general language of the application, to work with your 
-developments it will then be necessary to define the `boilerplatelocale` middleware on your routes.
-
-<blockquote>
-<p>
-The <code>boilerplatelocale</code> middleware will replace default application locale by the locale setted in the boilerplate's 
-configuration file.
-</p>
-<p>
-See <a href="https://laravel.com/docs/master/middleware#assigning-middleware-to-routes">Laravel documentation</a> on assigning 
-middleware to routes.
-</p>
-</blockquote>
-The default value is `config('app.locale')`
-
-Supported language are English (en), French (fr), Spanish (es) and Turkish (tr).
-
-> You can translate into a language not yet supported by copying the `src/resources/lang/boilerplate` folder content into 
-`resources/lang/vendor/boilerplate` folder. After that, copy or rename one of the language folders in the new language 
-folder to create. All you have to do is translate. If you want to share the language you have added, don’t hesitate to 
-make a pull request.
 
 ## logs
 

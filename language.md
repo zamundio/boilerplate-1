@@ -15,6 +15,12 @@ You can activate a language switch by setting to true the `switch` parameter in 
 selector will so be shown on the login page and in the top bar. Select allowed switchable languages by setting the `allowed` parameter
 in `config/boilerplate/locale.php`
 
+To work with your developments it will then be necessary to define the `boilerplatelocale` middleware on your routes.
+
+> The `boilerplatelocale` middleware will replace default application locale by the locale set in the boilerplate's configuration file.
+> 
+> See [Laravel documentation](https://laravel.com/docs/master/middleware#assigning-middleware-to-routes) on assigning middleware to routes.
+
 [See locale.php configuration file](../configuration/locale)
 
 ## Add a new language
