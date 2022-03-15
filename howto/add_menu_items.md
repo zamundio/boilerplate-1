@@ -78,7 +78,7 @@ Options are :
 | **permission** | Comma separated list of permissions required to display the menu item. |
 | **role** | Comma separated list of roles required to display the menu item. Admin is setted by default. |
 | **active**| Comma separated list of routes or route wildcard (eg: `boilerplate.users.*`). When one route is corresponding to the current one, item will be activated |
-| **icon** | Font awesome icon to use. You can use by default solid icons (`fas`) by just set the icon name (eg: `square`). Or you can set the full classes to use (eg: `far fa-square`). [See icons here](https://fontawesome.com/icons?d=gallery&m=free). |
+| **icon** | Font awesome icon or image URL to use. You can use by default solid icons (`fas`) by just set the icon name (eg: `square`). Or you can set the full classes to use (eg: `far fa-square`). [See icons here](https://fontawesome.com/icons?d=gallery&m=free). |
 | **order** | Order in the main menu (default = 100), the dashboard is level 0, users management is level 1000. |
 
 To add a sub item to an item :
