@@ -63,6 +63,31 @@ class ExampleDatatable extends Datatable
 }
 ```
 
+## API
+
+When using an API as data source, you can use `setOffset` and `setTotalRecords` to set the Datatable informations.
+
+```php
+use Sebastienheyd\Boilerplate\Datatables\Datatable;
+
+class ExampleDatatable extends Datatable
+{
+    public function datasource()
+    {
+        $data = MyExampleApi::get('https://myapiurl.example', [
+            'limit' => request()->input('length'),
+            'offset' => request()->input('start'),
+            'query' => request()->input('search')['value']
+        ]);
+                
+        $this->setOffset(request()->input('start'))
+             ->setTotalRecords($data->total);
+    
+        return collect($data->array);
+    }
+}
+```
+
 ## Passing parameters
 
 Sometimes you need to pass some parameters to the ajax call that retrieves the data. To do that, you can pass the parameters 
