@@ -107,6 +107,14 @@ Shows checkbox on every row:
 $this->showCheckboxes()
 ```
 
+This will generate a checkbox on every row that can be used to select multiple elements.
+
+To do this, every checkbox will be named `dt-checkbox[]` and use the id as the key. E.g `dt-checkbox[123]`. 
+
+But it's possible to set another field as the key by setting it when calling the method. E.g `$this->showCheckboxes('item_id')`
+
+> You can pass all the selected checkboxes to an ajax call by using the following selector : `$('input[name^=dt-checkbox]:checked').serialize()` 
+
 ## lengthMenu
 
 Sets length menu options.
