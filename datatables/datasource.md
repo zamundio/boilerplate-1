@@ -63,9 +63,7 @@ class ExampleDatatable extends Datatable
 }
 ```
 
-## API
-
-When using an API as data source, you can use `setOffset` and `setTotalRecords` to set the Datatable informations.
+## Array
 
 ```php
 use Sebastienheyd\Boilerplate\Datatables\Datatable;
@@ -74,16 +72,46 @@ class ExampleDatatable extends Datatable
 {
     public function datasource()
     {
-        $data = MyExampleApi::get('https://myapiurl.example', [
-            'limit' => request()->input('length'),
-            'offset' => request()->input('start'),
-            'query' => request()->input('search')['value']
-        ]);
+        return [
+            ['id' => 1, 'name' => 'John'],
+            ['id' => 2, 'name' => 'Jane'],
+            ['id' => 3, 'name' => 'James'],
+        ];
+    }
+
+    //...
+}
+```
+
+## API
+
+When using an API as data source, you can use `setOffset`, `setTotalRecords` and `setFilteredRecords` to set the Datatable informations.
+
+```php
+use GuzzleHttp\Client;
+use Sebastienheyd\Boilerplate\Datatables\Datatable;
+
+class ExampleDatatable extends Datatable
+{
+    public function datasource()
+    {
+        $json = (new Client())->get('https://myapiurl.tld/api', [
+            'query' => [
+                'q' => request()->input('search.value'),
+                'offset' => request()->input('start'),
+                'length' => request()->input('length'),
+                'filter_on_field_1' => request()->input('columns.0.search.value'),
+                'filter_on_field_2' => request()->input('columns.1.search.value'),
+            ]
+        ])->getBody()->getContents();
+        
+        $data = json_decode($json, true);
                 
         $this->setOffset(request()->input('start'))
-             ->setTotalRecords($data->total);
+             ->setTotalRecords($data['total'])
+             ->setFilteredRecords($data['total']);
     
-        return collect($data->array);
+        return $data['items'];
     }
 }
 ```
