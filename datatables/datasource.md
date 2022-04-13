@@ -85,7 +85,7 @@ class ExampleDatatable extends Datatable
 
 ## API
 
-When using an API as data source, you can use `setOffset`, `setTotalRecords` and `setFilteredRecords` to set the Datatable informations.
+When using an API as data source, you can use `setOffset`, `setTotalRecords`, `setFilteredRecords` and `skipPaging` to set the Datatable informations.
 
 ```php
 use GuzzleHttp\Client;
@@ -109,7 +109,8 @@ class ExampleDatatable extends Datatable
                 
         $this->setOffset(request()->input('start'))
              ->setTotalRecords($data['total'])
-             ->setFilteredRecords($data['total']);
+             ->setFilteredRecords($data['total'])
+             ->skipPaging();
     
         return $data['items'];
     }
