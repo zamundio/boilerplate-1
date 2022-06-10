@@ -121,6 +121,7 @@ To set the value, use the `selected` attribute, if you need to get the old input
 
 ```html
 <x-boilerplate::select2 name="birth_country" model="Namespace\To\Country,label,iso_code" :selected="old('birth_country', $user->birth_country)" />
+<x-boilerplate::select2 multiple name="countries[]" model="Namespace\To\Country,label,iso_code" :selected="old('countries', $user->countries)" />
 ```
 
 You can also set the maximum length of the result list by using the `max-length` attribute. 
