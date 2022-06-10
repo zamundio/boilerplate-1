@@ -37,9 +37,11 @@ Attributes that can be used with this component :
 | options | array | null | Associative array of options |
 | selected | string &#124; array | null | A string or an array of the selected options |
 | ajax | string | null | Ajax URL to call |
+| model | string | null | Model to use to fill the list by using a generic ajax call, [see below](#model) |
 | multiple | boolean | false | Set to true if select is multiple |
 | allow-clear | boolean | false | Set to true to allow selection clear |
 | placeholder | string | "—" | The placeholder value will be displayed until a selection is made |
+| max-length | integer | 10 | When using the `model` attribute, defines the maximum length of the result list |
 | minimum-input-length | integer | 0 | Minimum search term length before showing the options, efficient with large data sets |
 | minimum-results-for-search | integer | 10 | Minimum number of results required to display the search box |
 | group-class | string | null | Additionnal class that will be added to form-group | 
@@ -96,6 +98,42 @@ The controller must return selectable options in json format with this structure
 ```
 
 Have a look to the Select2 official documentation : [https://select2.org/data-sources/ajax](https://select2.org/data-sources/ajax)
+
+## Model
+
+In most cases, it is not necessary to write a controller to build the list, a generic controller exists for that.
+
+The only thing to do is to set the model to use and the field to search on.
+
+```html
+<x-boilerplate::select2 model="Sebastienheyd\Boilerplate\Models\User,first_name" />
+```
+
+In this case, select2 will search on the field first_name of the User model. By default, the model name will be used as the `name` attribute of the select and the model `keyName` as the options id.
+
+You can set another field as the option key value by setting it after the field name :
+
+```html
+<x-boilerplate::select2 model="Sebastienheyd\Boilerplate\Models\User,first_name,email" />
+```
+
+To set the value, use the `selected` attribute, if you need to get the old input value you have to use the `old` function, e.g. :
+
+```html
+<x-boilerplate::select2 name="birth_country" model="Namespace\To\Country,label,iso_code" :selected="old('birth_country', $user->birth_country)" />
+```
+
+You can also set the maximum length of the result list by using the `max-length` attribute. 
+
+```html
+<x-boilerplate::select2 model="Namespace\To\Country,label" max-length="20" />
+```
+
+By setting `max-length` to -1 and the attribute `minimum-input-length` to zero it will show the entire list :
+
+```html
+<x-boilerplate::select2 model="Namespace\To\Country,label" max-length="-1" minimum-input-length="0" />
+```
 
 ## Laravel 6
 
