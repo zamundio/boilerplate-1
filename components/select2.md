@@ -106,7 +106,7 @@ In most cases, it is not necessary to write a controller to build the list, a ge
 The only thing to do is to set the model to use and the field to search on.
 
 ```html
-<x-boilerplate::select2 model="Sebastienheyd\Boilerplate\Models\User,first_name" />
+<x-boilerplate::select2 model="Sebastienheyd\Boilerplate\Models\User|first_name" />
 ```
 
 In this case, select2 will search on the field first_name of the User model. By default, the model name will be used as the `name` attribute of the select and the model `keyName` as the options id.
@@ -114,27 +114,48 @@ In this case, select2 will search on the field first_name of the User model. By 
 You can set another field as the option key value by setting it after the field name :
 
 ```html
-<x-boilerplate::select2 model="Sebastienheyd\Boilerplate\Models\User,first_name,email" />
+<x-boilerplate::select2 model="Sebastienheyd\Boilerplate\Models\User|first_name|email" />
 ```
 
 To set the value, use the `selected` attribute, if you need to get the old input value you have to use the `old` function, e.g. :
 
 ```html
-<x-boilerplate::select2 name="birth_country" model="Namespace\To\Country,label,iso_code" :selected="old('birth_country', $user->birth_country)" />
-<x-boilerplate::select2 multiple name="countries[]" model="Namespace\To\Country,label,iso_code" :selected="old('countries', $user->countries)" />
+<x-boilerplate::select2 name="birth_country" model="Namespace\To\Country|label|iso_code" :selected="old('birth_country', $user->birth_country)" />
+<x-boilerplate::select2 multiple name="countries[]" model="Namespace\To\Country|label|iso_code" :selected="old('countries', $user->countries)" />
 ```
 
 You can also set the maximum length of the result list by using the `max-length` attribute. 
 
 ```html
-<x-boilerplate::select2 model="Namespace\To\Country,label" max-length="20" />
+<x-boilerplate::select2 model="Namespace\To\Country|label" max-length="20" />
 ```
 
 By setting `max-length` to -1 and the attribute `minimum-input-length` to zero it will show the entire list :
 
 ```html
-<x-boilerplate::select2 model="Namespace\To\Country,label" max-length="-1" minimum-input-length="0" />
+<x-boilerplate::select2 model="Namespace\To\Country|label" max-length="-1" minimum-input-length="0" />
 ```
+
+### Model scope
+
+You can also use a local scope to generate the option list, for example in your model : 
+
+```php
+public function scopeLocalScopeName($query, $q)
+{
+    $query->selectRaw('id as select2_id, CONCAT(field1, " ", field1) as select2_text')
+          ->where(\DB::raw('CONCAT(field1, " ", select2_text)'), 'like', "$q%")
+          ->orderBy('select2_text', 'desc');
+}
+```
+
+Then call the component with the scope name :
+
+```html
+<x-boilerplate::select2 model="Namespace\To\ModelName|LocalScopeName" />
+```
+
+**IMPORTANT** : you must call the fields `select2_id` and `select2_text`
 
 ## Laravel 6
 
