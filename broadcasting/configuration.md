@@ -31,4 +31,4 @@ BROADCAST_DRIVER=pusher
 
 ## Next step
 
-> [See how to use broadcasting features](/broadcasting/usage)
+> [See how to use broadcasting features](usage)

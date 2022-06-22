@@ -7,7 +7,7 @@ nav_order: 20
 
 ## Usage
 
-Once the [configuration](/broadcasting/configuration) is done, you are able to use the [Laravel broadcasting features](https://laravel.com/docs/broadcasting) in your application.
+Once the [configuration](configuration) is done, you are able to use the [Laravel broadcasting features](https://laravel.com/docs/broadcasting) in your application.
 
 ### Client side
 
@@ -40,4 +40,4 @@ See [Using An Example Application](https://laravel.com/docs/broadcasting#using-e
 
 ## Next step
 
-> [See a complete example](/broadcasting/example)
+> [See a complete example](example)

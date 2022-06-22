@@ -5,7 +5,6 @@ permalink: /broadcasting/example
 nav_order: 30
 ---
 
-
 # Example (private channel)
 
 In this example, we will create an artisan command that will send a message to all users.
