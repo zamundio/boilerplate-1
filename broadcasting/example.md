@@ -34,7 +34,7 @@ We will use a layout overload to add the listener on each page.
 
 Copy the file `vendor/sebastien/boilerplate/src/views/layout/index.blade.php` to the folder `resources/views/vendor/boilerplate/layout`
 
-The edit the copied file `resources/views/vendor/boilerplate/layout/index.blade.php` and add these lines before `</body>`
+Then edit the copied file `resources/views/vendor/boilerplate/layout/index.blade.php` and add these lines before `</body>`
 
 ```html
 @include('boilerplate::load.pusher')
