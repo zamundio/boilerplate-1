@@ -13,6 +13,8 @@ For example: you need to add fields to your user to be able to identify him, for
 
 ## Scaffold
 
+> **WARNING**! By using this command, all updates from future versions of boilerplate will be ignored. Use this only if you know what you are doing !
+
 This command will publish in your project the necessary files that will override those of the package and will allow you to modify them as you want.
 
 ```bash
@@ -22,7 +24,7 @@ php artisan boilerplate:scaffold
 This command will create these files or directories :
 
 | Path from project root | Description |
-| --- | --- | --- |
+| --- | --- |
 | routes/boilerplate.php | Edit this file to customize url or called controllers |
 | app/Http/Controllers/Boilerplate | All controllers used by this package |
 | app/Models/Boilerplate | User, Permission, Role and PermissionCategory models. Here you can add data to your user |
