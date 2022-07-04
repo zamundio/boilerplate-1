@@ -26,6 +26,9 @@ return [
 
     // Activating daily logs and showing log viewer
     'logs'       => true,
+    
+    // When set to true, allows admins to view the site as a user of their choice
+    'allowImpersonate'  => false,
 ];
 ```
 ---
@@ -73,3 +76,10 @@ The `logs` parameter allows you to define if you want to add `daily` to the logg
 <blockquote>
 Log viewer is only visible by administrators by default.
 </blockquote>
+
+## allowImpersonate
+
+When `allowImpersonate` is set to true, admins are allowed to view the site as the user of their choice by using a 
+switch in the navbar.
+
+> You can't switch to an admin user 
